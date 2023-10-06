@@ -29,31 +29,53 @@ body {
 }
 
 .sedan-box {
-  border: 3px solid green;
+  background-color: var(--clr-brightorange);
   max-width: 375px;
 }
 
 .sedan-box-content {
-  border: 3px solid yellow;
+  color: var(--clr-lightgray-bg-head-buttons);
+  padding: 30px;
+}
+
+.sedan-box-content h1 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
 }
 
 .suvs-box {
-  border: 3px solid green;
+  background-color: var(--clr-darkcyan);
   max-width: 375px;
 }
 
 .suvs-box-content {
-  border: 3px solid yellow;
+  color: var(--clr-lightgray-bg-head-buttons);
+  padding: 30px;
+}
+
+.suvs-box-content h2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
 }
 
 .luxury-box {
-  border: 3px solid green;
+  background-color: var(--clr-verydarkcyan);
   max-width: 375px;
 }
 
 .luxury-box-content {
-  border: 3px solid yellow;
+  color: var(--clr-lightgray-bg-head-buttons);
+  padding: 30px;
 }
+
+.luxury-box-content h2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
