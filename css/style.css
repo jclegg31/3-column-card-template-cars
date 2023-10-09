@@ -25,61 +25,132 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  border: 2px solid blue;
+  overflow: hidden;
 }
 
 .sedan-box {
   background-color: var(--clr-brightorange);
-  max-width: 375px;
+  max-width: 250px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.sedan-box-content {
+.sedan-box-content,
+.suvs-box-content,
+.luxury-box-content {
   color: var(--clr-lightgray-bg-head-buttons);
-  padding: 30px;
+  padding: 35px 40px;
+}
+
+.sedan-box-content img,
+.suvs-box-content img,
+.luxury-box-content img {
+  width: 25%;
 }
 
 .sedan-box-content h1 {
   font-family: 'Big Shoulders Display', sans-serif;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.sedan-box-content p,
+.suvs-box-content p,
+.luxury-box-content p {
+  color: var(--clr-transparentwhite-paragraghs);
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.sedanbtn {
+  color: var(--clr-brightorange);
+}
+
+.sedanbtn:hover {
+  background-color: var(--clr-brightorange);
+  color: var(--clr-lightgray-bg-head-buttons);
+  border: 1px solid var(--clr-lightgray-bg-head-buttons);
+}
+
+.suvsbtn:hover {
+  background-color: var(--clr-darkcyan);
+  color: var(--clr-lightgray-bg-head-buttons);
+  border: 1px solid var(--clr-lightgray-bg-head-buttons);
+}
+
+.luxurybtn:hover {
+  background-color: var(--clr-verydarkcyan);
+  color: var(--clr-lightgray-bg-head-buttons);
+  border: 1px solid var(--clr-lightgray-bg-head-buttons);
+}
+
+.suvsbtn {
+  color: var(--clr-darkcyan);
+}
+
+.luxurybtn {
+  color: var(--clr-verydarkcyan);
+}
+
+.btn {
+  text-decoration: none;
+  background-color: var(--clr-lightgray-bg-head-buttons);
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 0.7rem;
 }
 
 .suvs-box {
   background-color: var(--clr-darkcyan);
-  max-width: 375px;
+  max-width: 250px;
 }
 
-.suvs-box-content {
-  color: var(--clr-lightgray-bg-head-buttons);
-  padding: 30px;
-}
-
-.suvs-box-content h2 {
+.suvs-box-content h2,
+.luxury-box-content h2 {
   font-family: 'Big Shoulders Display', sans-serif;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  margin: 15px 0;
 }
 
 .luxury-box {
   background-color: var(--clr-verydarkcyan);
-  max-width: 375px;
+  max-width: 250px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.luxury-box-content {
-  color: var(--clr-lightgray-bg-head-buttons);
-  padding: 30px;
-}
+@media (min-width: 758px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
-.luxury-box-content h2 {
-  font-family: 'Big Shoulders Display', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.7rem;
-}
+  .sedan-box-content,
+  .suvs-box-content,
+  .luxury-box-content {
+    padding: 35px 40px 45px 40px;
+  }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  .sedan-box-content p,
+  .suvs-box-content p,
+  .luxury-box-content p {
+    margin-bottom: 55px;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+  }
+
+  .sedan-box {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+
+  .luxury-box {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+  }
 }
